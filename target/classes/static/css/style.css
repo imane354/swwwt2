@@ -1,0 +1,43 @@
+/*alle*/
+*{
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+html,body{
+    min-height: 100%;
+}
+
+
+#zusatzInfos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    row-gap: 10px;
+}
+
+
+
+#header {
+    grid-area: header;
+}    
+#containerBLUE { 
+    grid-area: containerBLUE;
+}
+footer { 
+    grid-area: footer;
+}
+
+#mainContainer{
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-columns: 100%;
+    align-items: center;
+    grid-gap: 0.8em;
+    grid-template-areas:"header"
+                        "containerBLUE"
+                        "footer";
+}
+.checked{
+    color: orange;
+}

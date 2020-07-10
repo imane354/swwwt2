@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <title>Suchen</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/suchen.css">
+	
+</head>
+<body>
+    <header id="header">
+        <figure id="logo">
+            <a href="home.html">
+                <img src="logo.png" class="logoC" alt="Take me away logo" />
+            </a>
+        </figure>
+        <form id="search">
+            <input type="text" id="searchField" placeholder="Reiseziel, Landname, Stadtname..">
+            <button id="searchBtn" type="button">Suchen</button>
+        </form> 
+
+        <nav>
+            <ul>
+                <li><a href="#">Startseite</a></li>
+                <li><a href="#">Über Uns</a></li>
+                <li><a>Konto</a>
+                    <ul>
+                        <li><a href="Übersicht.html">Übersicht</a></li>
+                        <li><a href="Bewertungen.html">Bewertungen</a></li>
+                        <li><a href="Buchungen.html">Buchungen</a></li>
+                        <li><a href="Einstellungen.html">Einstellungen</a></li>
+                        <li><a href="Abmelden.html">Abmelden</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id= "container1">
+    <aside>
+        <form id="filter">
+            <button id="filterAnpassen" type="button">Filter anpassen</button>
+            <p>
+                Kosten bis zu:
+                <input type="number" min="0">
+            </p>
+            <p>
+                Hotelsterne<br>
+                <input type="radio" onclick="filterSelection('alle')" name="sterne" checked>Alle<br>
+                <input type="radio" onclick="filterSelection('one')" name="sterne" checked>1 Stern<br>
+                <input type="radio" onclick="filterSelection('two')" name="sterne" checked>2 Stern<br>
+                <input type="radio" onclick="filterSelection('three')" name="sterne" checked>3 Stern<br>
+                <input type="radio" onclick="filterSelection('four')" name="sterne" checked>4 Stern<br>
+                <input type="radio" onclick="filterSelection('five')" name="sterne" checked>5 Stern<br>
+            </p> 
+            <p>
+              Jahreszeit
+              <select name="jahreszeit">
+                  <option value="winter">Winter</option>
+                  <option value="fruehling">Frühling</option>
+                  <option value="sommer" selected>Sommer</option>
+                  <option value="herbst">Herbst</option>
+              </select>  
+            </p>
+        </form>
+    </aside>
+    <main>
+        <div class="container">
+            <p class="filterDiv five">
+                <a href="bodrum.html"> <img src="img/bodrum.jpg" alt="Bodrum Bild" width="250" height="150"></a>
+                Bodrum Hotel 500€ 5 Sterne
+                <a href="bodrum.html"> <button type="button">Zum Angebot</button></a>
+            </p>
+            <p class="filterDiv five">
+                <a href="alanya.html"> <img src="img/alanya.jpg" alt="Alanya Bild" width="250" height="150"></a>
+                Alanya Hotel 500€ 5 Sterne
+                <a href="alanya.html"> <button type="button">Zum Angebot</button></a>
+            </p>
+            <p class="filterDiv five">
+                <a href="istanbul.html"> <img src="img/istanbul.jpg" alt="Istanbul Bild" width="250" height="150"></a>
+                Istanbul Hotel 500€ 5 Sterne
+                <a href="istanbul.html"> <button type="button">Zum Angebot</button></a>
+            </p>
+            <p class="filterDiv four">
+                <a href="palma.html"> <img src="img/palma.jpg" alt="Palma Bild" width="250" height="150"></a>
+                Palma de Mallorca Hotel 350€ 4 Sterne
+                <a href="img/palma.html"> <button type="button">Zum Angebot</button></a>
+            </p>
+            <p class="filterDiv two">
+                <a href="madrid.html"> <img src="img/madrid.jpg" alt="Madrid Bild" width="250" height="150"></a>
+                Madrid Hotel 200€ 2 Sterne
+                <a href="img/madrid.html"> <button type="button">Zum Angebot</button></a>
+            </p>
+            <p class="filterDiv three">
+                <a href="barcelona.html"> <img src="img/barcelona.jpg" alt="barcelona Bild" width="250" height="150"></a>
+                Barcelona Hotel 300€  3 Sterne
+                <a href="barcelona.html"> <button type="button">Zum Angebot</button></a>
+            </p>
+            <p class="filterDiv four">
+                <a href="lappland.html"> <img src="img/lappland.jpg" alt="Lappland Bild" width="250" height="150"></a>
+                Lappland Hotel 400€ 4 Sterne
+                <a href="lappland.html"> <button type="button">Zum Angebot</button></a>
+            </p>
+            <p class="filterDiv five">
+                <a href="norwegen.html"> <img src="img/norwegen.jpg" alt="Norwegen Bild" width="250" height="150"></a>
+                Norwegen Hotel 500€ 5 Sterne
+                <a href="norwegen.html"> <button type="button">Zum Angebot</button></a>
+            </p>
+            <p class="filterDiv one">
+                <a href="LA.html"> <img src="img/LA.jpg" alt="Los Angelos Bild" width="250" height="150"></a>
+                Los Angelos Hotel 200€ 1 Sterne
+                <a href="LA.html"> <button type="button">Zum Angebot</button></a>
+            </p>
+            <p class="filterDiv three">
+                <a href="newYork.html"> <img src="img/newyork.jpg" alt="New York Bild" width="250" height="150"></a>
+                New York Hotel 700€ 3 Sterne
+                <a href="newYork.html"> <button type="button">Zum Angebot</button></a>
+            </p>
+        </div>
+    </main>
+    </div>
+    <footer>
+        <small>&copy; Take me away</small>
+    </footer>
+</body>
+</html>

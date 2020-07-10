@@ -1,0 +1,37 @@
+#containerBLUE {
+    display: flex;
+    flex-direction: column;
+}
+
+
+button {
+    height: 50px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #E6B30E;
+    color: #1676BA;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #E6B30E;
+    background-color: #1676BA;
+}
+
+/**/
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+h2{
+    align-self: center;
+}

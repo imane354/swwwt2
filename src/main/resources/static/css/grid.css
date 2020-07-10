@@ -1,0 +1,26 @@
+
+
+#helloTxt {
+    grid-area: helloTxt;
+} 
+#userBild {
+    grid-area: userBild;
+}    
+#rate { 
+    grid-area: rate; 
+}   
+#plusInfos { 
+    grid-area: plusInfos;
+}
+
+#containerBLUE{
+    display: grid;
+    grid-template-rows: auto 40% auto auto;
+    grid-template-columns: 100%;
+    grid-gap: 1em;
+    justify-items: center;
+    grid-template-areas:"helloTxt"
+                        "userBild" 
+                        "rate" 
+                        "plusInfos";
+}

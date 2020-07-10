@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <title>Übersicht</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo-t.ico" />
+    <link rel="stylesheet" type="text/css" href="css/styleUeber.css">
+    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="mainContainer">
+
+    <div id="header">
+        <figure id="logo">
+            <a href="home.html">
+                <img src="img/logo.png" class="logoC" alt="Take me away logo" />
+            </a>
+        </figure>
+        <form id="search">
+            <input type="text" id="searchField" placeholder="Reiseziel,Landname,Stadtname..">
+            <button id="searchBtn" type="button">Suche</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="#">Startseite</a></li>
+                <li><a href="#">Über Uns</a></li>
+                <li><a>Konto</a>
+                    <ul>
+                        <li><a href="Übersicht.html">Übersicht</a></li>
+                        <li><a href="Bewertungen.html">Bewertungen</a></li>
+                        <li><a href="Buchungen.html">Buchungen</a></li>
+                        <li><a href="Einstellungen.html">Einstellungen</a></li>
+                        <li><a href="Abmelden.html">Abmelden</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="containerBLUE">
+
+        <span id="helloTxt">Hallo User!</span>
+
+        <img id="userBild" src="img/user-photo.png" alt="user-photo" />
+
+        <div id="rate">
+            <span id="Anmeldungsdatum">angemedet seit: 2020.06.11</span>
+            <span id="Userrate">Mitgliederrate 0 Punkte</span>
+        </div>
+
+            <ul id="plusInfos">
+                <li>
+                    <span class="Bewetungen-text">Bewertungen</span>
+                    <span class="Bewertungensrate">0</span>
+                </li>
+                <li> | </li>
+                <li>
+                    <span class="Reisenanzahl-text">Reisen</span>
+                    <span class="Reisenanzahl">0</span>
+                </li>
+                <li> | </li>
+                <li>
+                    <span class="Aktivitaetenanzahl-text">Aktivitäten</span>
+                    <span class="Aktivitaetenanzahl">0</span>
+                </li>
+            </ul>
+    </div>
+    
+    <footer>
+        <ul id="zusatzInfos">
+            <li><a href=#>Hilfe</a></li>
+            <li><a href=#>Datenschutz</a></li>
+            <li><a href=#>Impressum</a></li>
+            <li><a href=#>Über Uns</a></li>
+            <li>zuletzt geändert am: 15.06.2020</li>
+        </ul>
+        <small>&copy; Take me away</small>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+
+#containerBLUE{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-self: center;
+}
+
+hr{
+    margin: 14px;
+}
+button{
+    height: 50px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color:#E6B30E ;
+    color:#1676BA ;
+    cursor: pointer;
+}
+button:hover{
+    color:#E6B30E ;
+    background-color:#1676BA ;
+}
+
+
+/**/
+#bewTitel{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    padding: 0px;
+    margin: 0px;
+}
+.bewDatumOrt{
+    font-size: 10px;
+    font-style: italic;
+    word-spacing: 1px;
+}
+
+.bewText{
+    font-size: 13px;
+    word-wrap: break-word;
+    
+    max-width: 300px;
+    margin: 0 auto;
+    border: solid 2px #ccc;
+    padding: 12px;
+    margin-bottom: 5px;
+}

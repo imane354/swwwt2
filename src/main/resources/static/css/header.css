@@ -1,0 +1,104 @@
+
+
+nav ul{
+    text-align: left;
+}
+
+nav ul li{
+    border-radius: 5px;
+    float: left;
+    list-style: none; /*remove bollets*/
+    position: relative;
+
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    padding: 5px 12px;
+}
+
+nav ul li ul li a{
+    font-size: 14px;
+}
+
+nav ul li ul {
+    
+    display: none;
+    position: absolute;
+    background-color: #DDE3D7;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+nav ul li ul a {
+    color:#1676BA ;
+    padding: 10px 14px;
+}
+
+nav ul li ul a:hover{
+    background-color:#E6B30E ;
+}
+
+nav ul li:hover ul {
+    display: block; 
+}
+
+
+#header{
+    padding: 10px;
+    background-color: #DDE3D7;
+}
+
+#logo{
+    margin-left: 14px;
+}
+
+#search{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#searchField{
+    height: 50px;
+    width: 500px;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 0px 10px;
+}
+
+#searchBtn{
+    height: 55px;
+    width: 80px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color:#E6B30E ;
+    color:#1676BA ;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#searchBtn:hover{
+    color:#E6B30E ;
+    background-color:#1676BA ;
+}
+
+
+#logo {
+    grid-area: logo;
+}    
+#search { 
+    grid-area: search; 
+}   
+nav { 
+    grid-area: nav;
+}
+#header{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 18% 50% 32%;
+    grid-gap: 0.3em;
+    grid-template-areas:"logo search nav"
+}

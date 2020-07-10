@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+    <title>Einstellungen</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo-t.ico" />
+    <link rel="stylesheet" type="text/css" href="css/styleEin.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body id="mainContainer">
+
+    <div id="header">
+        <figure id="logo">
+            <a href="home.html">
+                <img src="img/logo.png" class="logoC" alt="Take me away logo" />
+            </a>
+        </figure>
+        <form id="search">
+            <input type="text" id="searchField" placeholder="Reiseziel,Landname,Stadtname..">
+            <button id="searchBtn" type="button">Suche</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="#">Startseite</a></li>
+                <li><a href="#">Über Uns</a></li>
+                <li><a>Konto</a>
+                    <ul>
+                        <li><a href="Übersicht.html">Übersicht</a></li>
+                        <li><a href="Bewertungen.html">Bewertungen</a></li>
+                        <li><a href="Buchungen.html">Buchungen</a></li>
+                        <li><a href="Einstellungen.html">Einstellungen</a></li>
+                        <li><a href="Abmelden.html">Abmelden</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="containerBLUE">
+
+        <form class="einstellungen_form" method="POST" action="">
+            <fieldset>
+                <legend>Einstellungen</legend>
+                <h4>Aktualisieren Sie hier Ihre persönlichen Infos </h5>
+
+                    <hr>
+
+                    <div id="bildBearbeiten">
+                        <img src="img/user-photo.png" alt="user-photo" width="150px" height="150px" />
+                        <label for="Bilddatei_id" class="Profilbild-hinzufügen">Profilbild hinzufügen
+                            <input id="Bilddatei_id" class="Profilbild-datei" type="file"
+                                accept="image/jpeg, image/png">
+                        </label>
+                    </div>
+                    <hr>
+
+                    <span>Anrede</span>
+                    <input type="radio" id="mann" name="Geschlecht" value="mann">
+                    <label for="mann">Herr</label>
+                    <input type="radio" id="frau" name="Geschlecht" value="frau">
+                    <label for="frau">Frau</label>
+                    <input type="radio" id="ohne-Anrede" name="Geschlecht" value="ohne Anrede">
+                    <label for="ohne-Anrede">ohne Anrede</label>
+
+
+                    <hr>
+
+                    <span>Vorname</span>
+                    <label for="vorname_id">
+                        <input id="vorname_id" name="vorname" type="text">
+                    </label>
+
+                    <hr>
+
+                    <span>Nachname</span>
+                    <label for="Nachname_id">
+                        <input id="Nachname_id" name="Nachname" type="text">
+                    </label>
+
+                    <hr>
+
+                    <span>Geburtsdatum</span>
+                    <label for="geburtsdatum_id">
+                        <input id="geburtsdatum_id" name="geburtsdatum" type="date">
+                    </label>
+
+                    <hr>
+
+                    <div class="adresse">
+                        <span>Adresse</span><br>
+                        <label for="strasse_id">Straße und Hausnr.
+                            <input id="strasse_id" name="strasse" type="text">
+                        </label><br>
+                        <label for="stadt_id">Stadt
+                            <input id="stadt_id" name="stadt" type="text">
+                        </label><br>
+                        <label for="postleitzahl_id">Postleitzahl
+                            <input id="postleitzahl_id" name="postleitzahl" type="text">
+                        </label><br>
+                        <label for="land_id">Land
+                            <input id="land_id" name="land" type="text">
+                        </label>
+                    </div>
+                    <hr>
+
+                    <span>E-Mail</span>
+                    <label for="email_id">
+                        <input id="email_id" name="email" type="email">
+                    </label>
+
+                    <br>
+
+                    <span>Passwort</span>
+                    <label for="passwort_id">
+                        <input id="passwort_id" name="passwort" type="password">
+                    </label>
+                    <hr>
+
+                    <button type="submit"><span>Speichern</span></button>
+            </fieldset>
+        </form>
+    </div>
+    
+    <footer>
+        <ul id="zusatzInfos">
+            <li><a href=#>Hilfe</a></li>
+            <li><a href=#>Datenschutz</a></li>
+            <li><a href=#>Impressum</a></li>
+            <li><a href=#>Über Uns</a></li>
+            <li>zuletzt geändert am: 15.06.2020</li>
+        </ul>
+        <small>&copy; Take me away</small>
+    </footer>
+
+</body>
+
+</html>
